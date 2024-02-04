@@ -176,15 +176,15 @@ function animate() {
         traffic[i].draw(ctx);
     }
 
-    ctx.globalAlpha = 1;
-    bestCar.draw(ctx, "lightblue", true);
-
     ctx.globalAlpha = 0.5;
-    cars[0].draw(ctx, "gold");
     
     for (let i = 1; i < cars.length; i++) {
         cars[i].draw(ctx, "blue");
     }
+
+    ctx.globalAlpha = 1;
+    bestCar.draw(ctx, "lightblue", true);
+    cars[0].draw(ctx, "#d4af37");
 
     ctx.restore();
     requestAnimationFrame(animate);
