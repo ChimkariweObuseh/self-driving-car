@@ -177,11 +177,13 @@ function animate() {
     }
 
     ctx.globalAlpha = 0.5;
-    for (let i = 0; i < cars.length; i++) {
-        cars[i].draw(ctx);
+
+    cars[0].draw(ctx, "gold");
+    for (let i = 1; i < cars.length; i++) {
+        cars[i].draw(ctx, "blue");
     }
     ctx.globalAlpha = 1;
-    bestCar.draw(ctx, true);
+    bestCar.draw(ctx, "yellow", true);
 
     ctx.restore();
     requestAnimationFrame(animate);
