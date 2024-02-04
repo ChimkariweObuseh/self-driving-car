@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self-driving Car</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="verticalButtons">
+      <button onclick="
+        save()
+        ">NEXT GENERATION</button>
+      <button onclick="
+        location.reload()
+        " style="background-color: gold;">RETRY GENERATION</button>
+      <button onclick="
+      discard()
+      " style="background: red; color: black; border-color: black;">RESET DATA</button>
+      <p>
+        Number of cars in parallel
+      </p>
+      <input type="number" id="parallels" placeholder="100"/>
+      <button onclick="
+        test()
+        " style="background: #00a1d8;">APPLY</button>
+    </div>
+    <script src="Road.js"></script>
+    <script src="Controls.js"></script>
+    <script src="classes.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

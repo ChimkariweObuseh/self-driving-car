@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
+* {
+  font-family: 'Lexend', sans-serif;
+}
+
+body{
+    margin:0;
+    background:darkgreen;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#verticalButtons {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    top: 5%;
+    right: 5%;
+    /* align-items: center; */
+}
+
+#canvas{
+    background:black;
+}
+
+p {
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #ffd9a8;
+  background: #56877e65;
+  border-bottom: transparent;
+  color: white;
+}
+
+input {
+  text-align: center;
+  justify-content: center;
+  background: #56877e99;
+  border: 1px solid #ffd9a8;
+  border-top: transparent;
+  color: #ffd9a8;
+}
+
+
+button {
+  padding: 10px;
+  margin: 3px;
+  cursor: pointer;
+  z-index: 1;
+  background: limegreen;
+  border-radius: 10px;
+  color: black;
+  border-color: black;
+}
+
+#upButton {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#downButton {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#leftButton {
+  position: absolute;
+  bottom: 45px;
+  left: 100px;
+  transform: translateY(-50%);
+}
+#rightButton {
+  position: absolute;
+  bottom: 45px;
+  right: 100px;
+  transform: translateY(-50%);
+}
+
+#stopButton {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
