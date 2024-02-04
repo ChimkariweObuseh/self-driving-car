@@ -135,7 +135,12 @@ function generateTraffic() {
         if (laneOne == 0) {
             laneTwo = getRndInteger(1, 2);
         } else if (laneOne == 1) {
-            laneTwo = getRndInteger(0, 2);
+            let a = getRndInteger(0, 1);
+            if (a === 0) {
+                laneTwo = 0;
+            } else {
+                laneTwo = 2;
+            }
         } else if (laneOne == 2) {
             laneTwo = getRndInteger(0, 1);
         }
