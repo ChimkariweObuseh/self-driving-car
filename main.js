@@ -185,6 +185,7 @@ function animate() {
     ctx.globalAlpha = 1;
     bestCar.draw(ctx, "lightblue", true);
     cars[0].draw(ctx, "#d4af37");
+    cars[0].sensor.color = "gold";
 
     ctx.restore();
     requestAnimationFrame(animate);
