@@ -147,11 +147,12 @@ class Car {
     }
 }
 class Sensor {
-    constructor(car) {
+    constructor(car, color = "limegreen") {
         this.car = car;
         this.rayCount = 5;
         this.rayLength = 150;
         this.raySpread = Math.PI / 2;
+        this.color = color;
 
         this.rays = [];
         this.readings = [];
@@ -234,7 +235,7 @@ class Sensor {
             }
 
             ctx.beginPath();
-            ctx.strokeStyle = "limegreen";
+            ctx.strokeStyle = this.color;
             ctx.lineWidth = 2;
             ctx.moveTo(
                 this.rays[i][0].x,
