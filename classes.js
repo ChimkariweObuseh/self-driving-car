@@ -31,9 +31,7 @@ class Car {
             this.#move();
             this.polygon = this.#createPolygon();
             this.damaged = this.#checkDamage(roadBorders, traffic);
-        } else {
-            this.brain = null;
-        }
+        
         if (this.controlType != "DUMMY") {
             this.sensor.update(roadBorders, traffic);
             const offsets = this.sensor.readings.map(
@@ -47,6 +45,7 @@ class Car {
                 this.controls.right = outputs[2];
                 this.controls.reverse = outputs[3];
             }
+        }
         }
     }
 
