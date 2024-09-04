@@ -21,17 +21,96 @@ if (localStorage.getItem("parallels")) {
 const cars = generateCars(numberOfParallels);
 let bestCar = cars[0];
 
-if (localStorage.getItem("bestBrain")) {
+if (localStorage.getItem("Slot2")) {
     for (let i = 0; i < cars.length; i++) {
         cars[i].brain = JSON.parse(
-            localStorage.getItem("bestBrain")
+            localStorage.getItem("Slot2")
         );
         if (i != 0) {
-            NeuralNetwork.mutate(cars[i].brain, 0.2);
+            if (i != 1) {
+                if (i != 2) {
+                    if (i != 3) {
+                        if (i != 4) {
+            NeuralNetwork.mutate(cars[0].brain, 0.2);
+                        }
+                    }
+                }
+            }
         }
     }
 }
-
+if (localStorage.getItem("Slot3")) {
+    for (let i = 0; i < cars.length; i++) {
+        cars[i].brain = JSON.parse(
+            localStorage.getItem("Slot3")
+        );
+        if (i != 0) {
+            if (i != 1) {
+                if (i != 2) {
+                    if (i != 3) {
+                        if (i != 4) {
+            NeuralNetwork.mutate(cars[0].brain, 0.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+if (localStorage.getItem("Slot4")) {
+    for (let i = 0; i < cars.length; i++) {
+        cars[i].brain = JSON.parse(
+            localStorage.getItem("Slot4")
+        );
+        if (i != 0) {
+            if (i != 1) {
+                if (i != 2) {
+                    if (i != 3) {
+                        if (i != 4) {
+            NeuralNetwork.mutate(cars[0].brain, 0.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+if (localStorage.getItem("Slot5")) {
+    for (let i = 0; i < cars.length; i++) {
+        cars[i].brain = JSON.parse(
+            localStorage.getItem("Slot5")
+        );
+        if (i != 0) {
+            if (i != 1) {
+                if (i != 2) {
+                    if (i != 3) {
+                        if (i != 4) {
+            NeuralNetwork.mutate(cars[0].brain, 0.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+if (localStorage.getItem("Slot1")) {
+    for (let i = 0; i < cars.length; i++) {
+        cars[i].brain = JSON.parse(
+            localStorage.getItem("Slot1")
+        );
+        if (i != 0) {
+            if (i != 1) {
+                if (i != 2) {
+                    if (i != 3) {
+                        if (i != 4) {
+            NeuralNetwork.mutate(cars[0].brain, 0.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 //Utility Functions
 
 function lerp(A, B, t) {
@@ -105,14 +184,14 @@ animate();
 
 function save() {
     localStorage.setItem(
-        "bestBrain",
+        "Slot1",
         JSON.stringify(bestCar.brain)
     );
     location.reload();
 }
 
 function discard() {
-    localStorage.removeItem("bestBrain");
+    localStorage.removeItem("Slot1");
     location.reload();
 }
 
@@ -185,7 +264,15 @@ function animate() {
     ctx.globalAlpha = 1;
     bestCar.draw(ctx, "lightblue", true);
     cars[0].draw(ctx, "#d4af37");
-    cars[0].sensor.color = "gold";
+    cars[1].draw(ctx, "#a9a9a9");
+    cars[2].draw(ctx, "#d2b48c");
+    cars[3].draw(ctx, "#9ACD32");
+    cars[4].draw(ctx, "#6A5ACD");
+    cars[0].sensor.color = "#d4af37";
+    cars[1].sensor.color = "#a9a9a9";
+    cars[2].sensor.color = "#d2b48c";
+    cars[3].sensor.color = "#9ACD32";
+    cars[4].sensor.color = "#6A5ACD";
 
     ctx.restore();
     requestAnimationFrame(animate);
