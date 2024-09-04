@@ -31,7 +31,7 @@ if (localStorage.getItem("Slot2")) {
                 if (i != 2) {
                     if (i != 3) {
                         if (i != 4) {
-            NeuralNetwork.mutate(cars[0].brain, 0.2);
+            NeuralNetwork.mutate(cars[i].brain, 0.2);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ if (localStorage.getItem("Slot3")) {
                 if (i != 2) {
                     if (i != 3) {
                         if (i != 4) {
-            NeuralNetwork.mutate(cars[0].brain, 0.2);
+            NeuralNetwork.mutate(cars[i].brain, 0.2);
                         }
                     }
                 }
@@ -67,7 +67,7 @@ if (localStorage.getItem("Slot4")) {
                 if (i != 2) {
                     if (i != 3) {
                         if (i != 4) {
-            NeuralNetwork.mutate(cars[0].brain, 0.2);
+            NeuralNetwork.mutate(cars[i].brain, 0.2);
                         }
                     }
                 }
@@ -85,7 +85,7 @@ if (localStorage.getItem("Slot5")) {
                 if (i != 2) {
                     if (i != 3) {
                         if (i != 4) {
-            NeuralNetwork.mutate(cars[0].brain, 0.2);
+            NeuralNetwork.mutate(cars[i].brain, 0.2);
                         }
                     }
                 }
@@ -103,7 +103,7 @@ if (localStorage.getItem("Slot1")) {
                 if (i != 2) {
                     if (i != 3) {
                         if (i != 4) {
-            NeuralNetwork.mutate(cars[0].brain, 0.2);
+            NeuralNetwork.mutate(cars[i].brain, 0.2);
                         }
                     }
                 }
