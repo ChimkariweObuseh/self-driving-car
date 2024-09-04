@@ -21,6 +21,16 @@ if (localStorage.getItem("parallels")) {
 const cars = generateCars(numberOfParallels);
 let bestCar = cars[0];
 
+if (localStorage.getItem("Slot1")) {
+    for (let i = 0; i < cars.length; i++) {
+        cars[i].brain = JSON.parse(
+            localStorage.getItem("Slot1")
+        );
+        if (i != 0) {
+            NeuralNetwork.mutate(cars[i].brain, 0.2);
+        }
+    }
+}
 if (localStorage.getItem("Slot2")) {
     for (let i = 0; i < cars.length; i++) {
         cars[i].brain = JSON.parse(
@@ -28,14 +38,8 @@ if (localStorage.getItem("Slot2")) {
         );
         if (i != 0) {
             if (i != 1) {
-                if (i != 2) {
-                    if (i != 3) {
-                        if (i != 4) {
             NeuralNetwork.mutate(cars[i].brain, 0.2);
-                        }
-                    }
-                }
-            }
+        }
         }
     }
 }
@@ -47,11 +51,7 @@ if (localStorage.getItem("Slot3")) {
         if (i != 0) {
             if (i != 1) {
                 if (i != 2) {
-                    if (i != 3) {
-                        if (i != 4) {
             NeuralNetwork.mutate(cars[i].brain, 0.2);
-                        }
-                    }
                 }
             }
         }
@@ -66,9 +66,7 @@ if (localStorage.getItem("Slot4")) {
             if (i != 1) {
                 if (i != 2) {
                     if (i != 3) {
-                        if (i != 4) {
             NeuralNetwork.mutate(cars[i].brain, 0.2);
-                        }
                     }
                 }
             }
@@ -93,24 +91,7 @@ if (localStorage.getItem("Slot5")) {
         }
     }
 }
-if (localStorage.getItem("Slot1")) {
-    for (let i = 0; i < cars.length; i++) {
-        cars[i].brain = JSON.parse(
-            localStorage.getItem("Slot1")
-        );
-        if (i != 0) {
-            if (i != 1) {
-                if (i != 2) {
-                    if (i != 3) {
-                        if (i != 4) {
-            NeuralNetwork.mutate(cars[i].brain, 0.2);
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+
 //Utility Functions
 
 function lerp(A, B, t) {
