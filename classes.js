@@ -62,7 +62,7 @@ class Car {
         }
 
         if (bestCar) {
-        if (this.y > bestCar.y + 100) {
+        if (this.y > bestCar.y + 120) {
             return true;
         }
         }
