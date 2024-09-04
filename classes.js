@@ -60,6 +60,12 @@ class Car {
                 return true;
             }
         }
+
+        if (bestCar) {
+        if (this.y > bestCar.y + 500) {
+            return true;
+        }
+        }
         return false;
     }
 
