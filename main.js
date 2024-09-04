@@ -32,7 +32,7 @@ if (localStorage.getItem("Slot1")) {
     }
 }
 if (localStorage.getItem("Slot2")) {
-    for (let i = 0; i < cars.length; i++) {
+    for (let i = 1; i < cars.length; i++) {
         cars[i].brain = JSON.parse(
             localStorage.getItem("Slot2")
         );
@@ -44,7 +44,7 @@ if (localStorage.getItem("Slot2")) {
     }
 }
 if (localStorage.getItem("Slot3")) {
-    for (let i = 0; i < cars.length; i++) {
+    for (let i = 2; i < cars.length; i++) {
         cars[i].brain = JSON.parse(
             localStorage.getItem("Slot3")
         );
@@ -58,7 +58,7 @@ if (localStorage.getItem("Slot3")) {
     }
 }
 if (localStorage.getItem("Slot4")) {
-    for (let i = 0; i < cars.length; i++) {
+    for (let i = 3; i < cars.length; i++) {
         cars[i].brain = JSON.parse(
             localStorage.getItem("Slot4")
         );
@@ -74,7 +74,7 @@ if (localStorage.getItem("Slot4")) {
     }
 }
 if (localStorage.getItem("Slot5")) {
-    for (let i = 0; i < cars.length; i++) {
+    for (let i = 4; i < cars.length; i++) {
         cars[i].brain = JSON.parse(
             localStorage.getItem("Slot5")
         );
