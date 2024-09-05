@@ -171,8 +171,24 @@ function save() {
     location.reload();
 }
 
-function discard() {
+function discardSlot1() {
     localStorage.removeItem("Slot1");
+    location.reload();
+}
+function discardSlot2() {
+    localStorage.removeItem("Slot2");
+    location.reload();
+}
+function discardSlot3() {
+    localStorage.removeItem("Slot3");
+    location.reload();
+}
+function discardSlot4() {
+    localStorage.removeItem("Slot4");
+    location.reload();
+}
+function discardSlot5() {
+    localStorage.removeItem("Slot5");
     location.reload();
 }
 
